@@ -1,9 +1,9 @@
 public class Book
 {
-    String isbn, name;
-    Author author;
-    double price;
-    int qty = 0;
+    private String isbn, name;
+    private Author author;
+    private double price;
+    private int qty = 0;
 
     public Book(String isbn, String name, Author author, double price)
     {

@@ -1,6 +1,6 @@
 public class Author
 {
-    String name, email;
+    private String name, email;
 
     public Author(String name, String email)
     {
