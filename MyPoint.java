@@ -1,57 +1,70 @@
-public class MyPoint{
-    private int x = 0;
-    private int y = 0;
+public class MyPoint
+{
+    private  int x = 0;
+    private  int y = 0;
 
-    public MyPoint(){
+    public MyPoint()
+    {
     }
 
-    public MyPoint(int x, int y){
+    public MyPoint(int x, int y)
+    {
         this.x = x;
         this.y = y;
     }
 
-    public int getX(){
+    public int getX()
+    {
         return x;
     }
 
-    public void setX(int x){
+    public void setX(int x)
+    {
         this.x = x;
     }
 
-    public int getY(){
+    public int getY()
+    {
         return y;
     }
 
-    public void setY(int y){
+    public void setY(int y)
+    {
         this.y = y;
     }
 
-    public int[] getXY(){
+    public int[] getXY()
+    {
         return new int[]{x,y};
     }
 
-    public void setXY(int x, int y){
+    public void setXY(int x, int y)
+    {
         this.x = x;
         this.y = y;
     }
 
-    public String toString(){
+    public String toString()
+    {
         return "(" + x + "," + y + ")";
     }
 
-    public double distance(int x, int y) {
+    public double distance(int x, int y) 
+    {
         int xDiff = this.x - x;
         int yDiff = this.y - y;
         return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
     }
 
-    public double distance(MyPoint another) {
+    public double distance(MyPoint another)
+    {
         int xDiff = this.x - another.x;
         int yDiff = this.y - another.y;
         return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
      }
     
-    public double distance(){
+    public double distance()
+    {
         return distance(0,0);
     }
 }
